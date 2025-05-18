@@ -1,0 +1,27 @@
+package com.cdac.utils;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBUtils {
+	private static Connection connection;
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/adv_java";
+	private static final String USER_NAME = "root";
+	private static final String PASSWORD = "cdac";
+
+	// open connection - to open DB connecti//open connecti
+	public static void openConnection() throws ClassNotFoundException, SQLException {
+		//1 in earlier version -load JDBC driver -(optinal step)
+		//Class.forName("com.mysql.cj.jdbc.Driver");//fully c qualified JDBC driver 
+		// 2. Get fixed DB connection from DriverManager
+		/*
+		 * java.sql.DriverManager -class Method - public static Connection
+		 * getConnection(String url,String userName, String password) throws
+		 * SQLException
+		 */
+		connection = DriverManager.getConnection(DB_URL,USER_NAME,PASSWORD );
+	
+	
+	}
+}

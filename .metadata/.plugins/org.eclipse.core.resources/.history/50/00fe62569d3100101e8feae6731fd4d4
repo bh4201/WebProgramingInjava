@@ -1,0 +1,24 @@
+package com.cdac.tester;
+
+import static com.cdac.utils.DBUtils.*;
+
+import java.sql.SQLException;
+
+public class TestStatement {
+
+	public static void main(String[] args) {
+		
+		//openConnection
+		try {
+			openConnection();
+			//get connection
+			getConnection();
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

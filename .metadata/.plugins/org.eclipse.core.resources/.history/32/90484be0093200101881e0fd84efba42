@@ -1,0 +1,9 @@
+package com.cdac.dao;
+
+import java.sql.SQLException;
+
+import com.cdac.pojos.User;
+
+public interface BankAccountDao {
+//
+	String transferFunds(int src) throws SQLException}

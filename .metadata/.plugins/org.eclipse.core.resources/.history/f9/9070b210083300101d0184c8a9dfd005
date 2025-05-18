@@ -1,0 +1,31 @@
+package com.cdac.dao;
+
+import java.sql.*;
+
+import com.cdac.pojos.User;
+import static com.cdac.utils.DBUtils.*;
+
+public class UserDaoImpl implements UserDao {
+	private Connection connection;
+	
+	private PreparedStatement pst1,pst2;
+	
+	public UserDaoImpl(){
+		//openConnection();
+		connection = getConnection();
+	}
+
+	@Override
+	public User signIn(String email, String pwd) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String signUp(User newUser) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

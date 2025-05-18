@@ -1,0 +1,8 @@
+package com.cdac.pages;
+
+public class Snippet {
+	public static void main(String[] args) {
+		candidate_list
+	}
+}
+
