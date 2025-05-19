@@ -8,7 +8,7 @@ public class DBUtils {
 	private static Connection connection;
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/adv_java";
 	private static final String USER_NAME = "root";
-	private static final String PASSWORD = "cdac";
+	private static final String PASSWORD = "root";
 
 	// open connection - to open DB connection
 	public static void openConnection() throws SQLException {
@@ -41,4 +41,3 @@ public class DBUtils {
 	}
 
 }
-
