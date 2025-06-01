@@ -1,0 +1,29 @@
+package com.cdac.dao;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.cdac.entities.User;
+import com.cdac.entities.UserRole;
+
+public interface UserDao {
+//add a method to sign up new user
+	String signUp(User user);
+
+	User getUserDetails(Long userId);
+
+	List<User> getAllUsers();
+
+	List<User> getSelectedUsers(LocalDate start,
+			LocalDate end,UserRole role);
+
+
+
+	List<String> getSelectedUsersFirstNames(UserRole valueOf);
+
+	List<User> getSelectedUsersDetails(UserRole valueOf);
+
+	String updateUserDetails(LocalDate date, double discount);
+
+	User userSignIn(String next, String next2);
+}
