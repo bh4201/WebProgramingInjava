@@ -1,0 +1,41 @@
+Today's Sequence - 
+
+Local deployment of spring boot app
+
+Testing in Spring Boot
+
+Unit Testing - DAO layer testing
+Write unit test case for data layer
+ - user sign in
+ - get restaurant with menu
+
+Add Integration Test (Service-DAO-Entity-DB)
+ - Test addFoodItem of FoodItemService
+ 
+
+Spring AOP
+ - Aspect Oriented Programming
+ - Exam objective
+
+
+Enter Spring security
+ - introduction to Servlet Filter
+ - Spring security architecture
+ - In memory authentication
+  - spring security flow n important blocks
+ - DB based authentication with HTTP Basic Auth mechanism
+  - identify dis advantages in Basic Auth scheme
+ - Enter JWT (if time permits !)
+ 
+Add these dependencies in the pom.xml
+
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+- 
